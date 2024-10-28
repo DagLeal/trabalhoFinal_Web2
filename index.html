@@ -20,8 +20,25 @@
 
 
         <footer>
-
+            <form method="post" action="recomendacoes.py">
+                <fieldset><legend>Deixe sua recomendação</legend>
+                    <div class="side1"><p><label>Nome:<input type="text" required name="nome" placeholder="Deixe seu nome ou apelido." maxlength=50 size=55 /></label></p>
+                    <p><label>Email:<input type="email" required name="email" size=55 /></label></p>
+                    <p>Tipo do material: <select name="tipo" required>
+                        <option>Animação</option>
+                        <option>Filme</option>
+                        <option>Jogo</option>
+                        <option>Livro</option>
+                        <option>Série</option>
+                    </select></p>
+                    </div>
+                    <div class="side2"><p>Recomendação</p>
+                    <textarea cols=60 rows=10 maxlength=200 required placeholder="Deixe o nome e um pequeno resumo da sua recomendação. Sem spoilers!"></textarea>
+                    <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
         </footer>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
