@@ -1,8 +1,15 @@
 body {
     margin: 0px;
+    background-color: blue;
     background-size: auto 100%;
 }
 
 header {
     display: grid;
+    height: 30px;
+}
+
+footer{
+    display: grid;
+    height: 60px
 }
