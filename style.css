@@ -1,12 +1,37 @@
 body {
     margin: 0px;
-    background-color: blue;
-    background-size: auto 100%;
+    background-image: url(backgroundOpt1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 header {
     display: grid;
-    height: 30px;
+    height: 100px;
+    grid-template-rows: auto;
+    grid-template-columns: 20% auto auto;
+    grid-template-areas: "logo centro lateral";
+}
+
+.logoImg{
+    grid-area: logo;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.logoImg img{
+    height: 90px;
+}
+
+#midIndex{
+    height: 500px;
+    background-color: beige;
+    opacity: 30%;
+}
+
+#teste1{
+    height: 160px;
+    display: block;
 }
 
 footer{
