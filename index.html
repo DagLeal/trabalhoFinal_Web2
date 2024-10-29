@@ -9,6 +9,55 @@
     <body>
         <header>
             <div class="logoImg"><a href="index.html"><img src="VDB.png"></a></div>
+            <div class="botoes">
+                <div class="dropdown ps">
+                    <button class="dropdown-btn">PlayStation</button>
+                    <div class="dropdown-content">
+                        <a href="#">PlayStation 1</a>
+                        <a href="#">PlayStation 2</a>
+                        <a href="#">PlayStation 3</a>
+                        <a href="#">PSP</a>
+                        <a href="#">PSVita</a>
+                        <a href="#">PlayStation 4</a>
+                        <a href="#">PlayStation 5</a>
+                    </div>
+                </div>
+                <div class="dropdown ninte">
+                    <button class="dropdown-btn">Nintendo</button>
+                    <div class="dropdown-content">
+                        <a href="#">NES</a>
+                        <a href="#">SNES</a>
+                        <a href="#">Nintendo 64</a>
+                        <a href="#">GameBoy</a>
+                        <a href="#">GameBoy Color</a>
+                        <a href="#">Game Cube</a>
+                        <a href="#">GameBoy Advanced</a>
+                        <a href="#">Nintendo Wii</a>
+                        <a href="#">Nintendo DS</a>
+                        <a href="#">Nintendo WiiU</a>
+                        <a href="#">Nintendo 3DS</a>
+                        <a href="#">Nintendo Switch</a>
+                    </div>
+                </div>
+                <div class="dropdown xbox">
+                    <button class="dropdown-btn">Xbox</button>
+                    <div class="dropdown-content">
+                        <a href="#">Opção 1</a>
+                        <a href="#">Opção 2</a>
+                        <a href="#">Opção 3</a>
+                    </div>
+                </div>
+                <div class="dropdown sega">
+                    <button class="dropdown-btn">Sega</button>
+                    <div class="dropdown-content">
+                        <a href="#">MegaDrive</a>
+                        <a href="#">Master System</a>
+                    </div>
+                </div>
+                <div class="dropdown pc">
+                    <button class="pc-btn">PC</button>
+                </div>
+            </div>
         </header>
 
         <div id="midIndex"><p id='teste1'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -20,20 +69,20 @@
 
 
         <footer>
-            <form method="post" action="recomendacoes.py">
-                <fieldset><legend>Deixe sua recomendação</legend>
-                    <div class="side1"><p><label>Nome:<input type="text" required name="nome" placeholder="Deixe seu nome ou apelido." maxlength=50 size=55 /></label></p>
+            <form id="formu" method="post" action="recomendacoes.py">
+                <fieldset><legend>Deixe sua recomendação ou comentário</legend>
+                    <div class="side1"><p><label>Nome:<input type="text" required name="nome" placeholder="Deixe seu nome ou apelido" maxlength=50 size=55 /></label></p>
                     <p><label>Email:<input type="email" required name="email" size=55 /></label></p>
-                    <p>Tipo do material: <select name="tipo" required>
-                        <option>Animação</option>
-                        <option>Filme</option>
-                        <option>Jogo</option>
-                        <option>Livro</option>
-                        <option>Série</option>
+                    <p>Plataforma: <select name="tipo" required>
+                        <option>PlayStation</option>
+                        <option>Nintendo</option>
+                        <option>Xbox</option>
+                        <option>Sega</option>
+                        <option>PC</option>
                     </select></p>
                     </div>
-                    <div class="side2"><p>Recomendação</p>
-                    <textarea cols=60 rows=10 maxlength=200 required placeholder="Deixe o nome e um pequeno resumo da sua recomendação. Sem spoilers!"></textarea>
+                    <div><p>Recomendação</p>
+                    <textarea cols=60 rows=5 maxlength=200 required></textarea>
                     <input type="submit" value="Enviar">
                     </div>
                 </fieldset>
