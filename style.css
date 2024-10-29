@@ -23,12 +23,17 @@
     src: url('fonts/Dragos.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Dragonslapper';
+    src: url('fonts/Dragonslapper.ttf') format('truetype');
+}
+
 body {
     margin: 0px;
     background-image: url(backgroundOpt1.jpg);
     background-repeat: no-repeat;
     background-size: auto auto;
-    font-family: Dragos;
+    font-family: Dragonslapper;
     font-size: large;
 }
 
@@ -76,8 +81,7 @@ header {
     border: solid 2px orange;
     cursor: pointer;
     border-radius: 3px;
-    font-family: Dragos;
-    font-size: large;
+    font-family: Dragonslapper;
 }
 
 .pc-btn {
@@ -88,8 +92,12 @@ header {
     border: solid 2px orange;
     cursor: pointer;
     border-radius: 3px;
-    font-family: Dragos;
-    font-size: large;
+    font-family: Dragonslapper;
+}
+
+.pc-btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .dropdown-content {
