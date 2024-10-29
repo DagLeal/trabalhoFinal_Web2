@@ -1,8 +1,35 @@
+@font-face {
+    font-family: 'Creative Over Trial';
+    src: url('fonts/CreativeOverTrial.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Darkcastle';
+    src: url('fonts/Darkcastle_PERSONAL_USE_ONLY.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hysteria Witcher';
+    src: url('fonts/Hysteria Witcher.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dragonic';
+    src: url('fonts/Dragonic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dragos';
+    src: url('fonts/Dragos.ttf') format('truetype');
+}
+
 body {
     margin: 0px;
     background-image: url(backgroundOpt1.jpg);
     background-repeat: no-repeat;
     background-size: auto auto;
+    font-family: Dragos;
+    font-size: large;
 }
 
 header {
@@ -49,6 +76,8 @@ header {
     border: solid 2px orange;
     cursor: pointer;
     border-radius: 3px;
+    font-family: Dragos;
+    font-size: large;
 }
 
 .pc-btn {
@@ -59,6 +88,8 @@ header {
     border: solid 2px orange;
     cursor: pointer;
     border-radius: 3px;
+    font-family: Dragos;
+    font-size: large;
 }
 
 .dropdown-content {
