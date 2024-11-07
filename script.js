@@ -17,3 +17,22 @@ function shrinkCard(card){
         card.classList.toggle('flipped')
     }
 }
+
+var slides = [/CT/chronotrigger_scene_02.jpg,/CT/chronotrigger_scene_04.jpg,/CT/chronotrigger_scene_07.jpg,/CT/chronotrigger_scene_08.jpg]
+var tam = slides.length
+var satual = 0
+var tmpslider
+
+function trocaAutomatica(){
+    satual ++
+    if(satual >= tam){
+        satual = 0
+    }
+
+document.querySelector('#dvSlider').style.backgroundImage=`url('$(slides[satual])')`
+}
+
+function iniciaSlider(){
+    document.querySelector('#dvSlider').style.backgroundImage=`url('(slides[satual])')`
+    tmpslider =setInterval(trocaAutomatica,2000)
+}

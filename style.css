@@ -32,7 +32,7 @@ body {
     margin: 0px;
     background-image: url(backgroundOpt1.jpg);
     background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: auto, cover;
     font-family: Dragonslapper;
     font-size: large;
 }
@@ -252,3 +252,224 @@ footer{
     background-color: gold;
     border-radius: 0px 0px 8px 8px;
 }
+
+.element-body{
+    cursor: url('Cursor.ico'), auto;
+}
+
+.element-body:hover {
+    cursor: url('Cursor_Animado.gif'), auto;
+}
+
+.chr{
+    position: sticky;
+    background-size: auto auto;
+}
+
+.glass-effect {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: #1b1818; 
+    text-align: center;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.carrossel-slide {
+    display: flex;
+    transition: transform 1s ease; 
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 100%; 
+}
+
+.carrossel:hover{
+    transform: size 50%;
+}
+
+/*player*/
+* {
+margin: 0;
+padding: 0;
+}
+
+.player {
+    background: url('http://www.507projex.com/storage/1274690205_1drinkthesea.jpeg?__SQUARESPACE_CACHEVERSION=1282165707604');
+    background-size: cover;
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px 1px hsla(0,0%,100%,.1),
+                0 2px 8px hsla(0,0%,0%,.4);
+    left: 50%;
+    margin: -113px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 226px;
+}
+.player .details {
+    height: 136px;
+    position: relative;
+}
+.player .details .track {
+    background:  hsla(0,0%,0%,.75);
+    border-top: 1px sold hsla(0,0%,0%,.9);
+    bottom: -96px;
+    box-shadow: 0 -1px 1px hsla(0,0%,100%,.1);
+    position: absolute;
+    width: 100%;
+    -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s;
+}
+.player:hover .details .track {
+    bottom: 0;
+}
+.player .details .track .title {
+    color: #fff;
+    font: 14px/24px 'Gill Sans MT', sans-serif;
+    padding: 6px 12px;
+}
+.player .details .track .title strong {
+    font-weight: bold;
+}
+.player .bottom {
+    background-color: hsla(0,0%,25%,1);
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:    -moz-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:     -ms-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:      -o-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:         linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    border-top: 1px solid #111;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.1);
+    padding: 12px;
+    position: relative;
+    top: 96px;
+    -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s;
+}
+.player:hover .bottom {
+    top: 0;
+}
+.player .bottom .playback {
+    background: #333;
+    border: 1px solid #161616;
+    border-radius: 2px;
+    box-shadow: inset 0 5px 10px hsla(0,0%,0%,.25),
+                0 1px 1px hsla(0,0%,100%,.1);
+    height: 12px;
+}
+.player .bottom .playback .progress {
+    background-image: -webkit-linear-gradient(left, hsla(0,0%,100%,.075) 25%, transparent 25%),
+                        -webkit-linear-gradient(-45deg, #f66, #fc6, #ff6, #6cf);
+    background-image:    -moz-linear-gradient(left, hsla(0,0%,100%,.075) 25%, transparent 25%),
+                            -moz-linear-gradient(-45deg, #f66, #fc6, #ff6, #6cf);
+    background-image:     -ms-linear-gradient(left, hsla(0,0%,100%,.075) 25%, transparent 25%),
+                            -ms-linear-gradient(-45deg, #f66, #fc6, #ff6, #6cf);
+    background-image:      -o-linear-gradient(left, hsla(0,0%,100%,.075) 25%, transparent 25%),
+                            -o-linear-gradient(-45deg, #f66, #fc6, #ff6, #6cf);
+    background-image:         linear-gradient(left, hsla(0,0%,100%,.075) 25%, transparent 25%),
+                                linear-gradient(-45deg, #f66, #fc6, #ff6, #6cf);
+    background-size: 3px 3px, 100% 100%;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.25),
+                inset 0 -1px 1px hsla(0,0%,0%,.25);
+    height: 100%;
+    position: relative;
+    width: 66%;
+}
+.player .bottom .playback:hover .progress:after {
+    background: hsla(0,0%,0%,.75);
+    border-radius: 3px;
+    bottom: -6px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,1),
+                inset 0 1px 2px hsla(0,0%,100%,.25),
+                0 1px 2px hsla(0,0%,0%,.25);
+    color: #fff;
+    content: attr(data-time);
+    font: 12px/1 sans-serif;
+    padding: 6px 0;
+    position: absolute;
+    right: -42px;
+    text-align: center;
+    width: 36px;
+}
+.player .bottom .playback:hover .progress:before {
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid hsla(0,0%,0%,1);
+    border-top: 6px solid transparent;
+    bottom: 0;
+    content: '';
+    height: 0;
+    position: absolute;
+    right: -6px;
+    width: 0;
+}
+.player .bottom .controls {
+    font-size: 0;
+    margin-top: 12px;
+}
+.player .bottom .controls div {
+    background-color: hsla(0,0%,40%,.75);
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:    -moz-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:     -ms-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:      -o-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    background-image:         linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    border: 1px solid #222;
+    box-shadow: inset 0 1px 2px hsla(0,0%,100%,.25),
+                inset 1px 0 1px hsla(0,0%,100%,.1),
+                inset -1px 0 1px hsla(0,0%,100%,.1);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 16px/16px sans-serif;
+    margin-left: -1px;
+    padding: 13px 12px 11px;
+    text-align: center;
+    text-shadow: 0 -1px 1px hsla(0,0%,0%,.75);
+    width: 42px;
+}
+.player .bottom .controls div:first-child {
+    border-radius: 3px 0 0 3px;
+    margin-left: 0;
+}
+.player .bottom .controls div:last-child {
+    border-radius: 0 3px 3px 0;
+}
+.player .bottom .controls div:hover {
+    background-color: hsla(0,0%,50%,.75);
+}
+.player .bottom .controls div:active {
+    background-color: hsla(0,0%,30%,.75);
+    box-shadow: inset 0 2px 2px hsla(0,0%,0%,.25),
+                inset 1px 0 1px hsla(0,0%,0%,.1),
+                inset -1px 0 1px hsla(0,0%,0%,.1);
+    padding-bottom: 10px;
+    position: relative;
+    top: 1px;
+}
+.player .bottom .controls div img {
+    opacity: .9;
+}​
