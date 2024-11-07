@@ -136,7 +136,7 @@ header {
     border: 2px solid rgb(0, 30, 65);
     border-left: none;
     border-right: none;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 105px 105px;
 }
 
 .conteudo{
@@ -191,4 +191,64 @@ footer{
 .pag{
     display: block;
     padding: 50px;
+}
+
+.card{
+    width: 300px;
+    border: 1px solid #CCC;
+    border-radius: 0px 0px 8px 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    perspective:1000px;
+}
+
+.card-inner{
+	width:100%;
+	height:100%;
+	position:relative;
+	transform-style:preserve-3d;
+	transition:transform 0.6s;
+}
+
+.card.flipped .card-inner{
+	transform:rotateY(180deg)
+}
+
+.card-front, .card-back{
+	width:100%;
+	height:auto;
+	position:absolute;
+	backface-visibility: hidden;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:1.5em
+}
+
+.card-back{
+	transform:rotateY(180deg);
+    background-color: blue;
+}
+
+.cardVideo{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: none;
+    display: hidden;
+}
+
+.cardImg{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: none;
+}
+
+.card-title{
+    margin: 0px;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    background-color: gold;
+    border-radius: 0px 0px 8px 8px;
 }
