@@ -29,10 +29,12 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     margin: 0px;
     background-image: url(backgroundOpt1.jpg);
     background-repeat: no-repeat;
-    background-size: auto, cover;
+    background-size: 100% auto;
     font-family: Dragonslapper;
     font-size: large;
 }
