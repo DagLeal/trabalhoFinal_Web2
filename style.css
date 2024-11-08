@@ -37,6 +37,7 @@ body {
     background-size: 100% auto;
     font-family: Dragonslapper;
     font-size: large;
+    overflow-x: hidden;
 }
 
 header {
@@ -144,7 +145,7 @@ header {
 .conteudo{
     width: 100%;
     height: auto;
-    margin: 40px;
+    margin: 40px 40px 110px 40px;
     display: flex;
 }
 
@@ -161,10 +162,11 @@ header {
 }
 
 footer{
+    height: 50px;
     display: grid;
     background-image: url(footerBack3.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     grid-template-rows: auto;
     grid-template-columns: auto 34% auto;
     grid-template-areas: "outro formulario algum";
@@ -255,7 +257,7 @@ footer{
     transform: rotateY(0deg);
 }
 
-.card .back video {
+.card:hover .back video {
     transform: rotateY(180deg); /* Corrige o espelhamento */
 }
 
