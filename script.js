@@ -45,3 +45,37 @@ function iniciaSlider(){
     document.querySelector('#dvSlider').style.backgroundImage=`url('(slides[satual])')`
     tmpslider =setInterval(trocaAutomatica,2000)
 }
+
+
+// Slideshow::
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("indicator-dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+}
+
+// Configura a troca automática de slides
+setInterval(() => {
+    plusSlides(1);
+}, 4000);  // Tempo de exibição do slide em milissegundos (4 segundos)

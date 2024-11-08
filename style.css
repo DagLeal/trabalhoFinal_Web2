@@ -506,3 +506,85 @@ padding: 0;
 .player .bottom .controls div img {
     opacity: .9;
 }
+
+/*Slideshow*/
+* { box-sizing: border-box; }
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+	box-shadow: 10px 6px linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	
+}
+
+.slide {
+    display: none;
+}
+
+img { vertical-align: middle; }
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+	text-shadow: 2px 2px 5px yellow;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next { right: 0; border-radius: 3px 0 0 3px; }
+
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; } 
+    to { opacity: 1; }
+}
+
+/* Estilos do indicador de slide */
+.indicator-container {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.indicator-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.indicator-dot {
+    width: 20px;
+    height: 5px;
+    background-color: #888;  /* Cinza para inativos */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.indicator-dot.active {
+    background-color: #f44336;  /* Cor para o slide ativo */
+}

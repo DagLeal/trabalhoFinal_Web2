@@ -6,12 +6,32 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="dvSlider" onmouseover="parar()" onmouseout="iniciaSlider()">
-      <input type="button" value="<" class="btn" onclick="troca(-1)" />
-      <input type="button" value=">" class="btn" onclick="troca(1)" />
-    </div>
+   
+    <div class="slideshow-container">
+      <div class="slide fade">
+         <img src="/jogos/chronotrigger/chronotrigger_scene_07.jpg" style="width:100%">
+          <div class="text">Vermelho - Paula Febbe</div>
+      </div>
+  
+      <div class="slide fade">
+          <img src="/jogos/chronotrigger/Chrono1.jpg" style="width:100%">
+          <div class="text">Outro Livro - Autor</div>
+      </div>
+  
+       <!-- Botões de navegação -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      <div class="indicator-container">
+          <div class="indicator-bar">
+              <div class="indicator-dot" onclick="currentSlide(1)"></div>
+              <div class="indicator-dot" onclick="currentSlide(2)"></div>
+              <!-- Adicione mais .indicator-dot conforme necessário -->
+          </div>
+      </div>
+  </div>
 
-    <!--<div class="player">
+    <div class="player">
     <div class="details">
         <div class="track">
             <p class="title"><strong>Nome da Musica</strong> Por Alguém</p>
@@ -22,12 +42,10 @@
             <div class="progress" data-time="2.33"></div>
         </div>
         <div class="controls">
-            <div><img src="http://png-3.findicons.com/files//icons/2337/wireframe_toolbar_icons/16/playback_prev.png" alt="previous"/></div>
-            <div><img src="http://png-1.findicons.com/files//icons/2337/wireframe_toolbar_icons/16/playback_play.png" alt="play"/></div>
-            <div><img src="http://png-1.findicons.com/files//icons/2337/wireframe_toolbar_icons/16/playback_next.png" alt="next"/></div>
+            <div class="play"><img src="ele-visual/botao-play.png" alt=play /></div>  
         </div>
     </div>
-</div>​-->
+</div>
 
     <script src="script.js"></script>
   </body>
