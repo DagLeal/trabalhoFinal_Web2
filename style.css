@@ -28,11 +28,21 @@
     src: url('fonts/Dragonslapper.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Rulingpen';
+    src: url('fonts/Rulingpen.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kulderin';
+    src: url('fonts/Kulderin.otf') format('truetype');
+}
+
 body {
     width: 100%;
     height: 100%;
     margin: 0px;
-    background-image: url(backgroundOpt1.jpg);
+    background-image: url(outerspace.gif);
     background-repeat: no-repeat;
     background-size: 100% auto;
     font-family: Dragonslapper;
@@ -143,7 +153,7 @@ header {
 }
 
 .conteudo{
-    width: 100%;
+    width: 95%;
     height: auto;
     margin: 40px 40px 110px 40px;
     display: flex;
@@ -170,29 +180,6 @@ footer{
     grid-template-rows: auto;
     grid-template-columns: auto 34% auto;
     grid-template-areas: "outro formulario algum";
-}
-
-#formu{
-    position: center;
-    background-image: url(formBack.png);
-    background-size: 100% 100%;
-    margin: 8px;
-    grid-area: formulario;
-    border-radius: 10px;
-    display: block;
-    padding: 5px;
-}
-
-#formu legend{
-    border: 1px solid white;
-    font-size: 19px;
-    padding: 2px;
-    border-radius: 3px;
-}
-
-#formu textarea{
-    margin-top: -8px;
-    margin-bottom: 6px;
 }
 
 .pag{
@@ -282,6 +269,30 @@ footer{
 
 .caption a{
     text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.deschar{
+    background-color: rgba(218, 165, 32, 0.421);
+    width: 100%;
+    color: NavajoWhite;
+}
+
+.pchar{
+    background-color: rgba(139, 0, 139, 0.677);
+    padding: 2px;
+    border: solid 1px whitesmoke;
+    font-size: larger;
+    color: powderblue;
+}
+
+.txtchar{
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Kulderin';
+    font-size: large;
+    font-weight: bold;
 }
 
 /*Hiago*/
