@@ -54,7 +54,8 @@ header {
     display: grid;
     margin: none;
     height: 115px;
-    background-image: url(headerBack.jpg);
+    background-image: linear-gradient(to bottom, #0069f6, #005efa, #0052fd, #0044ff, #0032ff, #0030f3, #002ee6, #002cda, #0034bb, #00369a, #003377, #1b2f54);
+    border: solid white 2px;
     background-size: 100% auto;
     background-repeat: repeat-x;
     grid-template-rows: auto;
@@ -87,22 +88,24 @@ header {
 .pc{position: relative; display: inline-block; grid-area: pc}
 
 .dropdown-btn {
-    background-color: #db5b34;
+    background-image: linear-gradient(to bottom, #0069f6, #005efa, #0052fd, #0044ff, #0032ff, #0030f3, #002ee6, #002cda, #0034bb, #00369a, #003377, #1b2f54);
+    border: solid white 2px;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
-    border: solid 2px orange;
+    border: solid 2px rgb(253, 253, 253);
     cursor: pointer;
     border-radius: 3px;
     font-family: Dragonslapper;
 }
 
 .pc-btn {
-    background-color: #db5b34;
+    background-image: linear-gradient(to bottom, #0069f6, #005efa, #0052fd, #0044ff, #0032ff, #0030f3, #002ee6, #002cda, #0034bb, #00369a, #003377, #1b2f54);
+    border: solid white 2px; 
     color: white;
     padding: 10px 20px;
     font-size: 16px;
-    border: solid 2px orange;
+    border: solid 2px rgb(247, 247, 247);
     cursor: pointer;
     border-radius: 3px;
     font-family: Dragonslapper;
@@ -116,21 +119,24 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-image: linear-gradient(to bottom, #0069f6, #005efa, #0052fd, #0044ff, #0032ff, #0030f3, #002ee6, #002cda, #0034bb, #00369a, #003377, #1b2f54);
+    border: solid white 2px;
+    color:white;
     min-width: 130px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
+
 .dropdown-content a {
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #877575;
 }
 
 .dropdown:hover .dropdown-content {
@@ -599,3 +605,4 @@ img { vertical-align: middle; }
 .indicator-dot.active {
     background-color: #f44336;  /* Cor para o slide ativo */
 }
+

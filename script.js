@@ -79,3 +79,5 @@ function showSlides(n) {
 setInterval(() => {
     plusSlides(1);
 }, 4000);  // Tempo de exibição do slide em milissegundos (4 segundos)
+
+/*PLAYER DE MUSICA */
