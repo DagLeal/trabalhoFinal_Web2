@@ -1,0 +1,72 @@
+<div class="slideshow-container">
+            <div class="slide fade">
+                <img src="/jogos/chronotrigger/chronotrigger_scene_02.jpg" style="width:100%">
+                <div class="text">Vermelho - Paula Febbe</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="/jogos/chronotrigger/chronotrigger_scene_04.jpg" style="width:100%">
+                <div class="text">Outro Livro - Autor</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="/jogos/chronotrigger/chronotrigger_scene_07.jpg" style="width:100%">
+                <div class="text">Outro Livro - Autor</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="/jogos/chronotrigger/chronotrigger_scene_08.jpg" style="width:100%">
+                <div class="text">Outro Livro - Autor</div>
+            </div>
+
+            <div class=music-player>
+                <nav>
+                    <div class="circle"> 
+                        <i class="parafuso">+</i>
+                    </div>
+                    <div class="circle"> 
+                        <i class="parafuso">+</i>
+                    </div>
+                </nav>
+                <img src="/jogos/chronotrigger/chronotrigger_scene_02.jpg" class="song-img"></img>
+                <h1>Memory Of Lightwaves <br> (From FF-X2)</h1>
+                <p>Takahito Eguchi e Noriko Matsueda</p>
+                
+                <audio id="song">
+                    <source src="/jogos/chronotrigger/Chrono Trigger - Main Theme.mp3" type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" id="progress">
+                
+                <div class="controls">
+                    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+                </div>
+
+                <div class=music-player>
+                    <nav>
+                        <div class="circle"> 
+                            <i class="parafuso">+</i>
+                        </div>
+                        <div class="circle"> 
+                            <i class="parafuso">+</i>
+                        </div>
+                    </nav>
+                    <img src="/jogos/chronotrigger/chronotrigger_scene_02.jpg" class="song-img"></img>
+                    <h1>Memory Of Lightwaves <br> (From FF-X2)</h1>
+                    <p>Takahito Eguchi e Noriko Matsueda</p>
+                    
+                    <audio id="song">
+                        <source src="/jogos/chronotrigger/Chrono Trigger - Main Theme.mp3" type="audio/mpeg">
+                    </audio>
+                    <input type="range" value="0" id="progress">
+                    
+                    <div class="controls">
+                        <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+                        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                        <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+                    </div>
+                
+            </div>
+            
+            

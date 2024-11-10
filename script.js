@@ -6,7 +6,7 @@ video.muted = true;
 card.addEventListener("mouseenter", () => {
     // Tenta reproduzir o vídeo
     const playPromise = video.play();
-  
+
     // Verifica se o navegador bloqueou a reprodução
     if (playPromise !== undefined) {
         playPromise
@@ -20,31 +20,12 @@ card.addEventListener("mouseenter", () => {
         });
     }
 });
-  
+
   // Pausa e reinicia o vídeo ao sair do cartão
 card.addEventListener("mouseleave", () => {
     video.pause();
     video.currentTime = 0; // Reinicia o vídeo quando o mouse sai
 });
-
-var slides = [/CT/chronotrigger_scene_02.jpg,/CT/chronotrigger_scene_04.jpg,/CT/chronotrigger_scene_07.jpg,/CT/chronotrigger_scene_08.jpg]
-var tam = slides.length
-var satual = 0
-var tmpslider
-
-function trocaAutomatica(){
-    satual ++
-    if(satual >= tam){
-        satual = 0
-    }
-
-document.querySelector('#dvSlider').style.backgroundImage=`url('$(slides[satual])')`
-}
-
-function iniciaSlider(){
-    document.querySelector('#dvSlider').style.backgroundImage=`url('(slides[satual])')`
-    tmpslider =setInterval(trocaAutomatica,2000)
-}
 
 
 // Slideshow::
@@ -81,3 +62,43 @@ setInterval(() => {
 }, 4000);  // Tempo de exibição do slide em milissegundos (4 segundos)
 
 /*PLAYER DE MUSICA */
+window.onload = function () {
+    console.log("Página carregada! Iniciando o script...");
+
+    const progress = document.getElementById("progress");
+    const song = document.getElementById("song");
+    const ctrlIcon = document.getElementById("ctrlIcon");
+
+    // Verifica se os elementos do player existem antes de continuar
+    if (progress && song && ctrlIcon) {
+        console.log("Elementos do player encontrados!");
+
+        // Função playPause definida de forma global
+        window.playPause = function () {
+            if (ctrlIcon.classList.contains("fa-pause")) {
+                song.pause();
+                ctrlIcon.classList.remove("fa-pause");
+                ctrlIcon.classList.add("fa-play");
+            } else {
+                song.play();
+                ctrlIcon.classList.add("fa-pause");
+                ctrlIcon.classList.remove("fa-play");
+            }
+        };
+
+        song.onloadedmetadata = function () {
+            progress.max = song.duration;
+            progress.value = 0;
+        };
+
+        song.ontimeupdate = function () {
+            progress.value = song.currentTime;
+        };
+
+        progress.oninput = function () {
+            song.currentTime = progress.value;
+        };
+    } else {
+        console.error("Elementos do player não encontrados!");
+    }
+};
