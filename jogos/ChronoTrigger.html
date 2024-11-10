@@ -55,7 +55,8 @@
             </div>
         </header>
 
-    <!--    <div class="conteudo">-->
+        <div class="container t">
+            <div class="conteudo">
             <fieldset class="deschar">
                 <legend class="pchar">Chrono Trigger</legend>
                 <p class="txtchar">Criado em 1995 pelo Dream Team, equipe que juntou os maiores talentos da época - Hironobu Sakaguchi de Final Fantasy,
@@ -66,6 +67,8 @@
                 </p>
             </fieldset>
         </div>
+        </div>
+        
         <div class="container">
 
             <div class="slideshow-container">
@@ -88,9 +91,46 @@
                     <img src="/jogos/chronotrigger/chronotrigger_scene_08.jpg" style="width:100%">
                     <div class="text">Outro Livro - Autor</div>
                 </div>
-    
-        <!--</div>-->
 
+                <!-- Botões de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div class="indicator-container">
+                    <div class="indicator-bar">
+                        <span class="indicator-dot" onclick="currentSlide(1)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(2)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(3)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class=music-player>
+			    <nav>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+			    </nav>
+			    <img src="/jogos/chronotrigger/chronotrigger_scene_02.jpg" class="song-img"></img>
+			    <h1>Chrono Trigger- Main Theme<br> </h1>
+			    <p>Various Artists</p>
+			
+			    <audio id="song">
+				<source src="/jogos/chronotrigger/Chrono Trigger - Main Theme.mp3" type="audio/mpeg">
+			    </audio>
+			    <input type="range" value="0" id="progress">
+			
+			    <div class="controls">
+				    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+				    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+			    </div>
+		    </div>	
+		</div>
         <footer>
             
         </footer>

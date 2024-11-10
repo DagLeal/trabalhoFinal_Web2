@@ -1,52 +1,46 @@
+console.log("Script carregado corretamente!");
+
 document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".indicator-dot");
+
+    if (slides.length === 0 || dots.length === 0) {
+        console.error("Slides ou dots não encontrados!");
+        return;
+    }
+
     let slideIndex = 1;
     showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
+    // Função para mostrar slides
     function showSlides(n) {
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("indicator-dot");
-
-        // Verifique se os elementos realmente existem
-        if (slides.length === 0 || dots.length === 0) {
-            console.error("Slides ou dots não encontrados!");
-            return;
-        }
-
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
+        if (n > slides.length) { slideIndex = 1; }
+        if (n < 1) { slideIndex = slides.length; }
         
-        // Esconde todos os slides
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
+        slides.forEach(slide => slide.style.display = "none");
+        dots.forEach(dot => dot.classList.remove("active"));
         
-        // Remove a classe 'active' de todos os dots
-        for (let i = 0; i < dots.length; i++) {
-            dots[i].classList.remove("active");
-        }
-
-        // Mostra o slide atual e ativa o indicador
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].classList.add("active");
     }
 
-    // Configura a troca automática de slides
+    // Função para avançar ou retroceder slides
+    window.plusSlides = function(n) {
+        showSlides(slideIndex += n);
+    };
+
+    // Função para ir para um slide específico
+    window.currentSlide = function(n) {
+        showSlides(slideIndex = n);
+    };
+
+    // Troca automática de slides a cada 4 segundos
     setInterval(() => {
-        plusSlides(1);
+        showSlides(++slideIndex);
     }, 4000);
 });
 
 
-
-/*PLAYER DE MUSICA */
 window.onload = function () {
     console.log("Página carregada! Iniciando o script...");
 
