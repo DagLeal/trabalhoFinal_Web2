@@ -5,6 +5,7 @@
         <meta charset = "utf-8">
         <link rel="ico" src="favicon.ico">
         <link href="/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/347ab6563e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -54,38 +55,118 @@
             </div>
         </header>
 
-        <div class="conteudo">
-            <fieldset class="deschar">
-                <legend class="pchar">Final Fantasy XVI</legend>
-                <p class="txtchar">Final Fantasy XVI é um jogo 
-                    eletrônico de RPG de ação desenvolvido e publicado 
-                    pela Square Enix. É o décimo sexto título principal 
-                    da série Final Fantasy e foi lançado mundialmente em 
-                    22 de junho de 2023 para PlayStation 5. A jogabilidade 
-                    apresenta vários ambientes segmentados abertos que o 
-                    jogador pode explorar, contendo um sistema de combate 
-                    orientado mais para ação envolvendo golpes com espadas 
-                    e ataques mágicos.
-                    A história se passa no mundo ficcional de Valisthea, um 
-                    local dividido em seis países diferentes que mantém seus 
-                    poderes por meio de cristais mágicos e pessoas capazes de 
-                    controlar monstros colossais e elementais chamados Eikons. 
-                    Tensões entre os países aumentam devido a uma praga mágica 
-                    que passa a consumir e secar toda vida na terra. A narrativa 
-                    acompanha Clive Rosfield, guardião de seu irmão mais novo 
-                    Joshua Rosfield, que testemunha a destruição de seu país e se envolve 
-                    no conflito cada vez maior entre as nações de Valisthea e o 
-                    poder secreto por trás do surgimento de um novo e até então 
-                    desconhecido Eikon de fogo. 
-                </p>
-            </fieldset>
+        <div class="container t">
+            <div class="conteudo">
+                <fieldset class="deschar">
+                    <legend class="pchar">Final Fantasy XVI</legend>
+                    <p class="txtchar">Final Fantasy XVI é um jogo 
+                        eletrônico de RPG de ação desenvolvido e publicado 
+                        pela Square Enix. É o décimo sexto título principal 
+                        da série Final Fantasy e foi lançado mundialmente em 
+                        22 de junho de 2023 para PlayStation 5. A jogabilidade 
+                        apresenta vários ambientes segmentados abertos que o 
+                        jogador pode explorar, contendo um sistema de combate 
+                        orientado mais para ação envolvendo golpes com espadas 
+                        e ataques mágicos.
+                        A história se passa no mundo ficcional de Valisthea, um 
+                        local dividido em seis países diferentes que mantém seus 
+                        poderes por meio de cristais mágicos e pessoas capazes de 
+                        controlar monstros colossais e elementais chamados Eikons. 
+                        Tensões entre os países aumentam devido a uma praga mágica 
+                        que passa a consumir e secar toda vida na terra. A narrativa 
+                        acompanha Clive Rosfield, guardião de seu irmão mais novo 
+                        Joshua Rosfield, que testemunha a destruição de seu país e se envolve 
+                        no conflito cada vez maior entre as nações de Valisthea e o 
+                        poder secreto por trás do surgimento de um novo e até então 
+                        desconhecido Eikon de fogo. 
+                    </p>
+                </fieldset>
         </div>
+        </div>
+        
+        <div class="container">
 
+            <div class="slideshow-container">
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-ambrosia-concept.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-anabella-rosfield-concept.jpg" style="width:100%">
+                </div>
 
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-at-the-foot-of-the-crystal.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-bahamut-concept-artwork.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-cidolfus-telamon-concept-artwork.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-barnabas-tharmr-concept-artwork.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-shiva-concept.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/finalFantasyXVI/ff16-ifrit-concept.jpg" style="width:100%">
+                </div>
 
+                <!-- Botões de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div class="indicator-container">
+                    <div class="indicator-bar">
+                        <span class="indicator-dot" onclick="currentSlide(1)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(2)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(3)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(4)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(5)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(6)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(7)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(8)"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class=music-player>
+			    <nav>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+			    </nav>
+			    <img src="/jogos/finalFantasyXVI/ff16-collaboration-art-by-rob-bowyer.jpg" class="song-img"></img>
+			    <h1>FFXVI - Land of Eikons<br> </h1>
+			    <p>Various Artists</p>
+			
+			    <audio id="song">
+				<source src="/jogos/finalFantasyXVI/ost/1-01 - Land of Eikons.mp3" type="audio/mpeg">
+			    </audio>
+			    <input type="range" value="0" id="progress">
+			
+			    <div class="controls">
+				    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+				    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+			    </div>
+		    </div>	
+		</div>
         <footer>
             
         </footer>
-        <script src="/script.js"></script>
+        <script src="/jogos/pagina.js" defer></script>
     </body>
 </html>

@@ -5,6 +5,7 @@
         <meta charset = "utf-8">
         <link rel="ico" src="favicon.ico">
         <link href="/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/347ab6563e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -76,11 +77,130 @@
             </fieldset>
         </div>
 
+        <div class="container">
+
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Batto_Shuruken_&_Komori_Missile_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Be_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Big_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Botsu_Artwork.png" style="height:100%">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Bull_Wario_WL_art.jpg" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Bull_Wario_holding_Pirate_Goom_WL_art.jpg" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Chicken_Duck_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Demon_Bat_Artwork.png" style="height:100%">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Dragon_Wario_WL_art.jpg" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/GenieCharacterManual.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Goboten_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Guragura_Artwork.png" style="height:100%">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Hinyari_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Knight_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Maizo_Artwork.png" style="height:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/warioLand/Minotaur_WL.jpg" style="height:100%">
+                </div>
+
+                <!-- Botões de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div class="indicator-container">
+                    <div class="indicator-bar">
+                        <span class="indicator-dot" onclick="currentSlide(1)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(2)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(3)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(4)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(5)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(6)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(7)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(8)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(9)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(10)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(11)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(12)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(13)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(14)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(15)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(16)"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class=music-player>
+			    <nav>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+			    </nav>
+			    <img src="/jogos/warioLand/WL_JetWario.png" class="song-img"></img>
+			    <h1>Wario Land - Main Theme<br> </h1>
+			    <p>Various Artists</p>
+			
+			    <audio id="song">
+				<source src="/jogos/warioLand/ost/01 Title.mp3" type="audio/mpeg">
+			    </audio>
+			    <input type="range" value="0" id="progress">
+			
+			    <div class="controls">
+				    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+				    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+			    </div>
+		    </div>	
+		</div>
+
 
 
         <footer>
             
         </footer>
-        <script src="/script.js"></script>
+        <script src="/jogos/pagina.js"></script>
     </body>
 </html>

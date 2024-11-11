@@ -5,6 +5,7 @@
         <meta charset = "utf-8">
         <link rel="ico" src="favicon.ico">
         <link href="/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/347ab6563e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -54,35 +55,114 @@
             </div>
         </header>
 
-        <div class="conteudo">
-            <fieldset class="deschar">
-                <legend class="pchar">Halo 3</legend>
-                <p class="txtchar">Halo 3 é um jogo eletrônico de tiro em primeira pessoa 
-                    desenvolvido pela Bungie para o Xbox 360. É o terceiro título da franquia Halo, 
-                    concluindo o arco de história que começou em 2001 com Halo: Combat Evolved 
-                    seguido por Halo 2, em 2004. O título foi lançado no dia 25 de setembro de 
-                    2007. Esse também foi o primeiro jogo da série a ser dublado para o português 
-                    brasileiro, com a dublagem sendo feita pelo estúdio Gigavoxx no Rio de Janeiro, 
-                    e tendo Master Chief na voz de Sérgio Fortuna.
-                    A história de Halo 3 centra-se na guerra interestelar, no século XXVI, entre 
-                    a humanidade e um conjunto de raças alienígenas conhecido como Covenant. 
-                    O jogador assume o papel de Master Chief, um supersoldado ciberneticamente 
-                    aprimorado, em sua batalha contra os Covenant. O game apresenta veículos, 
-                    armas e novas formas de jogabilidade jamais vistos nos títulos anteriores da 
-                    série, bem como a adição do salvamento de vídeos de jogabilidade, 
-                    compartilhamento de arquivos e um editor de mapas conhecido como Fornalha - 
-                    uma utilidade que permite ao jogador realizar modificações nas fases do modo 
-                    multijogador. 
-                </p>
-            </fieldset>
+        <div class="container t">
+            <div class="conteudo">
+                <fieldset class="deschar">
+                    <legend class="pchar">Halo 3</legend>
+                    <p class="txtchar">Halo 3 é um jogo eletrônico de tiro em primeira pessoa 
+                        desenvolvido pela Bungie para o Xbox 360. É o terceiro título da franquia Halo, 
+                        concluindo o arco de história que começou em 2001 com Halo: Combat Evolved 
+                        seguido por Halo 2, em 2004. O título foi lançado no dia 25 de setembro de 
+                        2007. Esse também foi o primeiro jogo da série a ser dublado para o português 
+                        brasileiro, com a dublagem sendo feita pelo estúdio Gigavoxx no Rio de Janeiro, 
+                        e tendo Master Chief na voz de Sérgio Fortuna.
+                        A história de Halo 3 centra-se na guerra interestelar, no século XXVI, entre 
+                        a humanidade e um conjunto de raças alienígenas conhecido como Covenant. 
+                        O jogador assume o papel de Master Chief, um supersoldado ciberneticamente 
+                        aprimorado, em sua batalha contra os Covenant. O game apresenta veículos, 
+                        armas e novas formas de jogabilidade jamais vistos nos títulos anteriores da 
+                        série, bem como a adição do salvamento de vídeos de jogabilidade, 
+                        compartilhamento de arquivos e um editor de mapas conhecido como Fornalha - 
+                        uma utilidade que permite ao jogador realizar modificações nas fases do modo 
+                        multijogador. 
+                    </p>
+                </fieldset>
         </div>
+        </div>
+        
+        <div class="container">
 
+            <div class="slideshow-container">
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-chief_arbiter.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-spartan-shotgun.jpg" style="width:100%">
+                </div>
 
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-mongoose1.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-highground.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-warthog.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-master-chief4.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-misc03.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/halo3/h3-spartan-assault-rifle.jpg" style="width:100%">
+                </div>
 
-
+                <!-- Botões de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div class="indicator-container">
+                    <div class="indicator-bar">
+                        <span class="indicator-dot" onclick="currentSlide(1)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(2)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(3)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(4)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(5)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(6)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(7)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(8)"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class=music-player>
+			    <nav>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+			    </nav>
+			    <img src="/jogos/halo3/halo3.jpg" class="song-img"></img>
+			    <h1>Halo 3 - Overture<br> </h1>
+			    <p>Various Artists</p>
+			
+			    <audio id="song">
+				<source src="/jogos/halo3/ost/Halo 3 ODST OST Disk 1 Track 1 Overture.mp3" type="audio/mpeg">
+			    </audio>
+			    <input type="range" value="0" id="progress">
+			
+			    <div class="controls">
+				    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+				    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+			    </div>
+		    </div>	
+		</div>
         <footer>
             
         </footer>
-        <script src="/script.js"></script>
+        <script src="/jogos/pagina.js" defer></script>
     </body>
 </html>

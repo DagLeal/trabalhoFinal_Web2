@@ -5,6 +5,7 @@
         <meta charset = "utf-8">
         <link rel="ico" src="favicon.ico">
         <link href="/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/347ab6563e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -74,10 +75,129 @@
         </div>
 
         
+        <div class="container">
+
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-boxart-us.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-cardboard-house.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-earth.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-logo.jpg">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-misc01.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-misc02.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-misc03.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-misc04.jpg">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-moon-full.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-sackboy-afro.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-sackboy-christmas-tree.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-sackboy-dragon.jpg">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-sackboy-gift.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-sackboy-guile.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-sackboy-ryu.jpg">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/littleBigPlanet/lbp-sackboy-sephiroth.jpg">
+                </div>
+
+                <!-- Botões de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div class="indicator-container">
+                    <div class="indicator-bar">
+                        <span class="indicator-dot" onclick="currentSlide(1)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(2)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(3)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(4)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(5)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(6)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(7)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(8)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(9)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(10)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(11)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(12)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(13)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(14)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(15)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(16)"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class=music-player>
+			    <nav>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+			    </nav>
+			    <img src="/jogos/littleBigPlanet/lbp-sackboy-on-world1.jpg" class="song-img"></img>
+			    <h1>Little Big Planet - Main Theme<br> </h1>
+			    <p>Various Artists</p>
+			
+			    <audio id="song">
+				<source src="/jogos/littleBigPlanet/ost/LittleBigPlanet OST - Interactive Gardens.mp3" type="audio/mpeg">
+			    </audio>
+			    <input type="range" value="0" id="progress">
+			
+			    <div class="controls">
+				    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+				    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+			    </div>
+		    </div>	
+		</div>
+
 
         <footer>
             
         </footer>
-        <script src="/script.js"></script>
+        <script src="/jogos/pagina.js"></script>
     </body>
 </html>

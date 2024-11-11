@@ -5,6 +5,7 @@
         <meta charset = "utf-8">
         <link rel="ico" src="favicon.ico">
         <link href="/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/347ab6563e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -54,18 +55,135 @@
             </div>
         </header>
 
-        <div class="conteudo">
-            <fieldset class="deschar">
-                <legend class="pchar">Kingdom Hearts 358/2 Days</legend>
-                <p class="txtchar">Kingdom Hearts 358/2 Days é um jogo eletrônico RPG de ação 
-                    desenvolvido pela Square Enix e h.a.n.d. e publicado pela Square Enix. É 
-                    o quinto título da série Kingdom Hearts e foi lançado exclusivamente para 
-                    o Nintendo DS em maio de 2009 no Japão, setembro na América do Norte e 
-                    outubro na Europa. A história segue Roxas em sua vida diária na 
-                    Organization XIII e seu relacionamento com seu companheiro Axel.
-                </p>
-            </fieldset>
+        <div class="container t">
+            <div class="conteudo">
+                <fieldset class="deschar">
+                    <legend class="pchar">Kingdom Hearts 358/2 Days</legend>
+                    <p class="txtchar">Kingdom Hearts 358/2 Days é um jogo eletrônico RPG de ação 
+                        desenvolvido pela Square Enix e h.a.n.d. e publicado pela Square Enix. É 
+                        o quinto título da série Kingdom Hearts e foi lançado exclusivamente para 
+                        o Nintendo DS em maio de 2009 no Japão, setembro na América do Norte e 
+                        outubro na Europa. A história segue Roxas em sua vida diária na 
+                        Organization XIII e seu relacionamento com seu companheiro Axel.
+                    </p>
+                </fieldset>
         </div>
+        </div>
+        
+        <div class="container">
+
+            <div class="slideshow-container">
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/01.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Ruler of the Sky.png" style="width:100%">
+                </div>
+
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Tailbunker, Phantomtail, Wavecrest.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Infernal Engine02.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Creepworm.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Roxas_Keyblade.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Casual Gear.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Air Battler.png" style="width:100%">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Archer.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Veil Lizard.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/Xion Final Form.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/02.png" style="width:100%">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/03.png" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/kingdomHearts358-2/04.png" style="width:100%">
+                </div>
+
+                <!-- Botões de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div class="indicator-container">
+                    <div class="indicator-bar">
+                        <span class="indicator-dot" onclick="currentSlide(1)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(2)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(3)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(4)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(5)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(6)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(7)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(8)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(9)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(10)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(11)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(12)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(13)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(14)"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class=music-player>
+			    <nav>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+			    </nav>
+			    <img src="/jogos/kingdomHearts358-2/Mystery Gear.png" class="song-img"></img>
+			    <h1>Roxas<br> </h1>
+			    <p>Various Artists</p>
+			
+			    <audio id="song">
+				<source src="/jogos/kingdomHearts358-2/ost/13. Roxas.mp3" type="audio/mpeg">
+			    </audio>
+			    <input type="range" value="0" id="progress">
+			
+			    <div class="controls">
+				    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+				    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+			    </div>
+		    </div>	
+		</div>
+        <footer>
+            
+        </footer>
+        <script src="/jogos/pagina.js" defer></script>
 
 
         <footer>

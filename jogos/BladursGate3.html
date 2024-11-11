@@ -5,6 +5,7 @@
         <meta charset = "utf-8">
         <link rel="ico" src="favicon.ico">
         <link href="/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/347ab6563e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -54,7 +55,8 @@
             </div>
         </header>
 
-        <div class="conteudo">
+        <div class="container t">
+            <div class="conteudo">
             <fieldset class="deschar">
                 <legend class="pchar">Baldur's Gate 3</legend>
                 <p class="txtchar">Baldur's Gate III é um jogo 
@@ -83,11 +85,91 @@
                 </p>
             </fieldset>
         </div>
+        </div>
+        
+        <div class="container">
 
+            <div class="slideshow-container">
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-astarion-3.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-astarion-high-poly.jpg" style="width:100%">
+                </div>
 
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-elminster3.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-elmionster1.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-gale-1-copy.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-hex-a-copy.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-hex-a-hfl-copy.jpg" style="width:100%">
+                </div>
+    
+                <div class="slide fade">
+                    <img src="/jogos/baldursGate3/alena-dubrovina-elmionster2.jpg" style="width:100%">
+                </div>
+
+                <!-- Botões de navegação -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div class="indicator-container">
+                    <div class="indicator-bar">
+                        <span class="indicator-dot" onclick="currentSlide(1)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(2)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(3)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(4)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(5)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(6)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(7)"></span>
+                        <span class="indicator-dot" onclick="currentSlide(8)"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class=music-player>
+			    <nav>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+				    <div class="circle"> 
+					    <i class="parafuso">+</i>
+				    </div>
+			    </nav>
+			    <img src="/jogos/baldursGate3/baldursgate3.jpg" class="song-img"></img>
+			    <h1>Baldur's Gate III - Main Theme<br> </h1>
+			    <p>Various Artists</p>
+			
+			    <audio id="song">
+				<source src="/jogos/baldursGate3/ost/01_Baldur_s_Gate_3_Original_Soundtrack_-_Main_Theme_Part_I_[_YouConvert.net_].mp3" type="audio/mpeg">
+			    </audio>
+			    <input type="range" value="0" id="progress">
+			
+			    <div class="controls">
+				    <!--<div><i class="fa-duotone fa-solid fa-backward"></i></div>-->
+				    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				    <!--<div><i class="fa-duotone fa-solid fa-forward"></i></div>-->
+			    </div>
+		    </div>	
+		</div>
         <footer>
             
         </footer>
-        <script src="/script.js"></script>
+        <script src="/jogos/pagina.js" defer></script>
     </body>
 </html>
